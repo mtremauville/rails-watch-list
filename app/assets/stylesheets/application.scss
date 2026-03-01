@@ -10,3 +10,39 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.hero {
+  background-image: image-url("felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    color: #e50914;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 0;
+  }
+}
